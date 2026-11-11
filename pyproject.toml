@@ -5,7 +5,7 @@ description = "Readiness kit for Cyber Essentials Plus and ISO/IEC 27001: eviden
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Jijesh Puliyappottammal" }]
+authors = [{ name = "Puliyappottammal Jijesh" }]
 dependencies = []
 
 [tool.pytest.ini_options]
