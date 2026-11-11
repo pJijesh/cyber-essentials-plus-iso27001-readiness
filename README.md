@@ -1,5 +1,7 @@
 # cyber-essentials-plus-iso27001-readiness
 
+![cyber-essentials-plus-iso27001-readiness: project banner](docs/images/banner.png)
+
 [![Tests](https://github.com/pJijesh/cyber-essentials-plus-iso27001-readiness/actions/workflows/test.yml/badge.svg)](https://github.com/pJijesh/cyber-essentials-plus-iso27001-readiness/actions/workflows/test.yml) [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 
 **Problem:** UK groups preparing for Cyber Essentials Plus and ISO/IEC 27001 often treat them as one project or as two unrelated ones, lose track of evidence, and apply either one heavy standard or no standard at all to sites in different countries.
