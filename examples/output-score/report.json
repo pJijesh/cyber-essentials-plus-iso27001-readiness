@@ -1,0 +1,1384 @@
+{
+  "as_of": "2026-11-11",
+  "review_days": 365,
+  "scoring_rule": "implemented 1.0, partial 0.5, not started 0.0, not applicable excluded",
+  "scopes": {
+    "ce": {
+      "overall": {
+        "total": 45,
+        "applicable": 44,
+        "implemented": 24,
+        "partial": 16,
+        "not_started": 4,
+        "not_applicable": 1,
+        "coverage_percent": 72.7
+      },
+      "themes": [
+        {
+          "theme": "Scope and inventory",
+          "total": 8,
+          "applicable": 8,
+          "implemented": 5,
+          "partial": 2,
+          "not_started": 1,
+          "not_applicable": 0,
+          "coverage_percent": 75.0
+        },
+        {
+          "theme": "Firewalls",
+          "total": 8,
+          "applicable": 8,
+          "implemented": 4,
+          "partial": 4,
+          "not_started": 0,
+          "not_applicable": 0,
+          "coverage_percent": 75.0
+        },
+        {
+          "theme": "Secure configuration",
+          "total": 6,
+          "applicable": 6,
+          "implemented": 4,
+          "partial": 2,
+          "not_started": 0,
+          "not_applicable": 0,
+          "coverage_percent": 83.3
+        },
+        {
+          "theme": "Security update management",
+          "total": 7,
+          "applicable": 7,
+          "implemented": 0,
+          "partial": 4,
+          "not_started": 3,
+          "not_applicable": 0,
+          "coverage_percent": 28.6
+        },
+        {
+          "theme": "User access control",
+          "total": 12,
+          "applicable": 12,
+          "implemented": 8,
+          "partial": 4,
+          "not_started": 0,
+          "not_applicable": 0,
+          "coverage_percent": 83.3
+        },
+        {
+          "theme": "Malware protection",
+          "total": 4,
+          "applicable": 3,
+          "implemented": 3,
+          "partial": 0,
+          "not_started": 0,
+          "not_applicable": 1,
+          "coverage_percent": 100.0
+        }
+      ]
+    },
+    "iso": {
+      "overall": {
+        "total": 93,
+        "applicable": 87,
+        "implemented": 14,
+        "partial": 38,
+        "not_started": 35,
+        "not_applicable": 6,
+        "coverage_percent": 37.9
+      },
+      "themes": [
+        {
+          "theme": "Organisational",
+          "total": 37,
+          "applicable": 37,
+          "implemented": 3,
+          "partial": 13,
+          "not_started": 21,
+          "not_applicable": 0,
+          "coverage_percent": 25.7
+        },
+        {
+          "theme": "People",
+          "total": 8,
+          "applicable": 8,
+          "implemented": 2,
+          "partial": 4,
+          "not_started": 2,
+          "not_applicable": 0,
+          "coverage_percent": 50.0
+        },
+        {
+          "theme": "Physical",
+          "total": 14,
+          "applicable": 14,
+          "implemented": 3,
+          "partial": 7,
+          "not_started": 4,
+          "not_applicable": 0,
+          "coverage_percent": 46.4
+        },
+        {
+          "theme": "Technological",
+          "total": 34,
+          "applicable": 28,
+          "implemented": 6,
+          "partial": 14,
+          "not_started": 8,
+          "not_applicable": 6,
+          "coverage_percent": 46.4
+        }
+      ]
+    }
+  },
+  "ce_priority": [
+    {
+      "id": "CE-UAC-04",
+      "requirement": "Turn on MFA for every cloud service that offers it, whether the option is free, bundled or paid.",
+      "why_it_matters": "MFA not enabled on a cloud service that offers it is an automatic fail",
+      "status": "partial"
+    },
+    {
+      "id": "CE-UPD-01",
+      "requirement": "Make sure all in-scope software is licensed and still supported by its vendor.",
+      "why_it_matters": "Unsupported software in scope is an automatic fail",
+      "status": "partial"
+    },
+    {
+      "id": "CE-UPD-02",
+      "requirement": "Remove software that has gone out of support, or take the device out of scope using a separated network sub-set that has no internet access.",
+      "why_it_matters": "Unsupported software in scope is an automatic fail",
+      "status": "not started"
+    },
+    {
+      "id": "CE-UPD-04",
+      "requirement": "Install operating system and firmware updates within 14 days of release when they fix vulnerabilities rated critical or high, scored 7 or more on CVSS v3, or have no severity given.",
+      "why_it_matters": "Critical or high operating system and firmware updates must be installed within 14 days",
+      "status": "partial"
+    },
+    {
+      "id": "CE-UPD-05",
+      "requirement": "Install application updates, including browser extensions and plug-ins, within 14 days of release under the same severity rules.",
+      "why_it_matters": "Critical or high application updates must be installed within 14 days",
+      "status": "partial"
+    }
+  ],
+  "gaps": [
+    {
+      "scope": "ce",
+      "id": "CE-UPD-02",
+      "theme": "Security update management",
+      "title": "Remove software that has gone out of support, or take the device out of scope using a separated network sub-set that has no internet access.",
+      "status": "not started",
+      "owner": "Endpoint Engineer",
+      "notes": "Two legacy shop-floor PCs run an operating system that is out of support. Isolation design agreed but not yet built.",
+      "priority": true
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-01",
+      "theme": "Security update management",
+      "title": "Make sure all in-scope software is licensed and still supported by its vendor.",
+      "status": "partial",
+      "owner": "Endpoint Engineer",
+      "notes": "All supported except the two legacy shop-floor PCs (see CE-UPD-02).",
+      "priority": true
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-04",
+      "theme": "Security update management",
+      "title": "Install operating system and firmware updates within 14 days of release when they fix vulnerabilities rated critical or high, scored 7 or more on CVSS v3, or have no severity given.",
+      "status": "partial",
+      "owner": "Endpoint Engineer",
+      "notes": "Operating systems meet the 14 day target through update rings. Firmware on branch routers is not yet tracked.",
+      "priority": true
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-05",
+      "theme": "Security update management",
+      "title": "Install application updates, including browser extensions and plug-ins, within 14 days of release under the same severity rules.",
+      "status": "partial",
+      "owner": "Endpoint Engineer",
+      "notes": "Browsers and office applications are covered. Browser extensions and the CAD plug-ins are not.",
+      "priority": true
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-04",
+      "theme": "User access control",
+      "title": "Turn on MFA for every cloud service that offers it, whether the option is free, bundled or paid.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "MFA enforced on the email and collaboration suite and the ERP portal. Two supplier portals and one workflow app still use passwords only. Plan to enforce or retire by end of January.",
+      "priority": true
+    },
+    {
+      "scope": "ce",
+      "id": "CE-SCO-07",
+      "theme": "Scope and inventory",
+      "title": "If anything is excluded, justify the exclusion, explain how it is separated from the rest, and list every legal entity that is in scope.",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "Mexico plant network shares a wireless segment with a contractor. Segregation not yet in place, so the site is not ready to be in scope.",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-03",
+      "theme": "Security update management",
+      "title": "Turn on automatic updates wherever the product offers them.",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-06",
+      "theme": "Security update management",
+      "title": "If an update bundles several fixes and any one is critical or high, install the whole bundle within 14 days.",
+      "status": "not started",
+      "owner": "Endpoint Engineer",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-SCO-04",
+      "theme": "Scope and inventory",
+      "title": "List every cloud service that holds or processes organisational data, who is responsible for each control (you or the provider), and keep all of them in scope.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "Register covers the main cloud tenant. Plant level and supplier-hosted services still to be added.",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-SCO-08",
+      "theme": "Scope and inventory",
+      "title": "Bring accounts used by suppliers, contractors and managed service providers into scope, and any organisation-owned device lent to a third party.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-01",
+      "theme": "Firewalls",
+      "title": "Protect every in-scope device with a correctly configured firewall: a boundary firewall, or a firewall on the device itself.",
+      "status": "partial",
+      "owner": "Network Engineer",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-04",
+      "theme": "Firewalls",
+      "title": "Block unauthenticated inbound connections by default and only open what is needed.",
+      "status": "partial",
+      "owner": "Network Engineer",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-05",
+      "theme": "Firewalls",
+      "title": "Have each inbound rule approved and documented by an authorised person, with the business reason recorded.",
+      "status": "partial",
+      "owner": "Network Engineer",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-08",
+      "theme": "Firewalls",
+      "title": "For cloud services, use the provider's network and data flow controls (for example access rules and allow lists) where a firewall cannot be used.",
+      "status": "partial",
+      "owner": "Network Engineer",
+      "notes": "Storage account network rules reviewed for the main tenant only.",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-CFG-02",
+      "theme": "Secure configuration",
+      "title": "Change default or easily guessed passwords on every device and application.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-CFG-04",
+      "theme": "Secure configuration",
+      "title": "Turn off auto-run features that start files without the user choosing to.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UPD-07",
+      "theme": "Security update management",
+      "title": "Practical measure: be able to show which in-scope devices are missing critical or high updates older than 14 days, including devices that are offline.",
+      "status": "partial",
+      "owner": "Endpoint Engineer",
+      "notes": "Dashboard covers managed laptops only. Servers and plant PCs are reported by hand.",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-06",
+      "theme": "User access control",
+      "title": "Use separate administrator accounts for administration only, never for email, web browsing or everyday work.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-07",
+      "theme": "User access control",
+      "title": "Take away special privileges when they are no longer needed, for example after a change of role.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-10",
+      "theme": "User access control",
+      "title": "Help people choose unique passwords, for example by providing a password manager and guidance on long passphrases, and do not force routine expiry.",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.3",
+      "theme": "Organisational",
+      "title": "Separation of conflicting duties",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.4",
+      "theme": "Organisational",
+      "title": "Management duty to enforce security",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.5",
+      "theme": "Organisational",
+      "title": "Contact with authorities",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.7",
+      "theme": "Organisational",
+      "title": "Threat intelligence",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "No threat intelligence source subscribed yet.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.8",
+      "theme": "Organisational",
+      "title": "Security in project work",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.10",
+      "theme": "Organisational",
+      "title": "Acceptable use rules",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.15",
+      "theme": "Organisational",
+      "title": "Access control rules",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.20",
+      "theme": "Organisational",
+      "title": "Security terms in supplier agreements",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.22",
+      "theme": "Organisational",
+      "title": "Supplier service monitoring and change",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.23",
+      "theme": "Organisational",
+      "title": "Cloud service security",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.24",
+      "theme": "Organisational",
+      "title": "Incident management planning",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "Incident plan to be written after the risk assessment.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.25",
+      "theme": "Organisational",
+      "title": "Assessing security events",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.26",
+      "theme": "Organisational",
+      "title": "Incident response",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.27",
+      "theme": "Organisational",
+      "title": "Learning from incidents",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.28",
+      "theme": "Organisational",
+      "title": "Evidence collection",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.29",
+      "theme": "Organisational",
+      "title": "Security during disruption",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.30",
+      "theme": "Organisational",
+      "title": "ICT continuity readiness",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "Continuity plan covers the main plant only.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.32",
+      "theme": "Organisational",
+      "title": "Intellectual property",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.33",
+      "theme": "Organisational",
+      "title": "Records protection",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.34",
+      "theme": "Organisational",
+      "title": "Privacy and personal data protection",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.35",
+      "theme": "Organisational",
+      "title": "Independent security review",
+      "status": "not started",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.3",
+      "theme": "People",
+      "title": "Awareness and training",
+      "status": "not started",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.8",
+      "theme": "People",
+      "title": "Security event reporting",
+      "status": "not started",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.5",
+      "theme": "Physical",
+      "title": "Environmental and physical threats",
+      "status": "not started",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.7",
+      "theme": "Physical",
+      "title": "Clear desk and clear screen",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.8",
+      "theme": "Physical",
+      "title": "Equipment siting and protection",
+      "status": "not started",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.10",
+      "theme": "Physical",
+      "title": "Storage media",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.3",
+      "theme": "Technological",
+      "title": "Information access restriction",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.10",
+      "theme": "Technological",
+      "title": "Information deletion",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.16",
+      "theme": "Technological",
+      "title": "Monitoring activities",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.18",
+      "theme": "Technological",
+      "title": "Privileged utility programs",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.21",
+      "theme": "Technological",
+      "title": "Network service security",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.22",
+      "theme": "Technological",
+      "title": "Network segregation",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.23",
+      "theme": "Technological",
+      "title": "Web filtering",
+      "status": "not started",
+      "owner": "",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.24",
+      "theme": "Technological",
+      "title": "Cryptography use",
+      "status": "not started",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.1",
+      "theme": "Organisational",
+      "title": "Information security policies",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "Policy set drafted and awaiting board approval.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.2",
+      "theme": "Organisational",
+      "title": "Security roles and responsibilities",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "Security lead named. Site level roles not yet defined.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.6",
+      "theme": "Organisational",
+      "title": "Contact with specialist security groups",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.9",
+      "theme": "Organisational",
+      "title": "Inventory of information and assets",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.11",
+      "theme": "Organisational",
+      "title": "Return of assets on exit",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.12",
+      "theme": "Organisational",
+      "title": "Information classification",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.16",
+      "theme": "Organisational",
+      "title": "Identity lifecycle management",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.18",
+      "theme": "Organisational",
+      "title": "Access rights provisioning and review",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.19",
+      "theme": "Organisational",
+      "title": "Security in supplier relationships",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.21",
+      "theme": "Organisational",
+      "title": "ICT supply chain security",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.31",
+      "theme": "Organisational",
+      "title": "Legal and contractual requirements",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.36",
+      "theme": "Organisational",
+      "title": "Compliance with own policies and standards",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.37",
+      "theme": "Organisational",
+      "title": "Documented operating procedures",
+      "status": "partial",
+      "owner": "Security Lead",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.4",
+      "theme": "People",
+      "title": "Disciplinary process",
+      "status": "partial",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.5",
+      "theme": "People",
+      "title": "Duties after leaving or role change",
+      "status": "partial",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.6",
+      "theme": "People",
+      "title": "Confidentiality agreements",
+      "status": "partial",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.7",
+      "theme": "People",
+      "title": "Remote working",
+      "status": "partial",
+      "owner": "HR Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.3",
+      "theme": "Physical",
+      "title": "Securing offices and rooms",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.4",
+      "theme": "Physical",
+      "title": "Physical monitoring",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "CCTV at the main plant and design studio. Other sites rely on alarms only.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.6",
+      "theme": "Physical",
+      "title": "Working in secure areas",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.9",
+      "theme": "Physical",
+      "title": "Assets off premises",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.12",
+      "theme": "Physical",
+      "title": "Cabling security",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.13",
+      "theme": "Physical",
+      "title": "Equipment maintenance",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.14",
+      "theme": "Physical",
+      "title": "Secure disposal or reuse",
+      "status": "partial",
+      "owner": "Facilities Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.1",
+      "theme": "Technological",
+      "title": "User endpoint devices",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.2",
+      "theme": "Technological",
+      "title": "Privileged access rights",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.5",
+      "theme": "Technological",
+      "title": "Secure authentication",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.8",
+      "theme": "Technological",
+      "title": "Technical vulnerability management",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.11",
+      "theme": "Technological",
+      "title": "Data masking",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.12",
+      "theme": "Technological",
+      "title": "Data leakage prevention",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.13",
+      "theme": "Technological",
+      "title": "Backup",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "Backups run for the main plant systems. Restore tests not yet recorded.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.15",
+      "theme": "Technological",
+      "title": "Logging",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "Central logging for identity and email only.",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.19",
+      "theme": "Technological",
+      "title": "Software installation on production systems",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.20",
+      "theme": "Technological",
+      "title": "Network security",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.26",
+      "theme": "Technological",
+      "title": "Application security requirements",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.27",
+      "theme": "Technological",
+      "title": "Secure architecture principles",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.32",
+      "theme": "Technological",
+      "title": "Change management",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.34",
+      "theme": "Technological",
+      "title": "Protecting systems during audit testing",
+      "status": "partial",
+      "owner": "IT Manager",
+      "notes": "",
+      "priority": false
+    }
+  ],
+  "overdue_reviews": [
+    {
+      "scope": "iso",
+      "id": "A.8.6",
+      "title": "Capacity management",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-08-19",
+      "days_since_review": 449,
+      "days_overdue": 84
+    },
+    {
+      "scope": "iso",
+      "id": "A.6.1",
+      "title": "Background screening",
+      "owner": "HR Manager",
+      "last_reviewed": "2025-08-20",
+      "days_since_review": 448,
+      "days_overdue": 83
+    },
+    {
+      "scope": "ce",
+      "id": "CE-MAL-01",
+      "title": "Have a malware protection method active on every in-scope device.",
+      "owner": "Endpoint Engineer",
+      "last_reviewed": "2025-08-25",
+      "days_since_review": 443,
+      "days_overdue": 78
+    },
+    {
+      "scope": "ce",
+      "id": "CE-SCO-08",
+      "title": "Bring accounts used by suppliers, contractors and managed service providers into scope, and any organisation-owned device lent to a third party.",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-08-26",
+      "days_since_review": 442,
+      "days_overdue": 77
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.1",
+      "title": "User endpoint devices",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-09-02",
+      "days_since_review": 435,
+      "days_overdue": 70
+    },
+    {
+      "scope": "ce",
+      "id": "CE-SCO-06",
+      "title": "Cover home and remote working: devices used at home are in scope, and a router supplied by the organisation is in scope.",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-09-06",
+      "days_since_review": 431,
+      "days_overdue": 66
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-05",
+      "title": "Have each inbound rule approved and documented by an authorised person, with the business reason recorded.",
+      "owner": "Network Engineer",
+      "last_reviewed": "2025-09-14",
+      "days_since_review": 423,
+      "days_overdue": 58
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-03",
+      "title": "Remove or disable accounts when they are no longer needed, for example when someone leaves or after a set period of inactivity.",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-10-02",
+      "days_since_review": 405,
+      "days_overdue": 40
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.16",
+      "title": "Identity lifecycle management",
+      "owner": "Security Lead",
+      "last_reviewed": "2025-10-06",
+      "days_since_review": 401,
+      "days_overdue": 36
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.19",
+      "title": "Software installation on production systems",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-10-07",
+      "days_since_review": 400,
+      "days_overdue": 35
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.12",
+      "title": "Information classification",
+      "owner": "Security Lead",
+      "last_reviewed": "2025-10-08",
+      "days_since_review": 399,
+      "days_overdue": 34
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.21",
+      "title": "ICT supply chain security",
+      "owner": "Security Lead",
+      "last_reviewed": "2025-10-09",
+      "days_since_review": 398,
+      "days_overdue": 33
+    },
+    {
+      "scope": "ce",
+      "id": "CE-CFG-01",
+      "title": "Regularly remove or disable accounts that are not needed, including guest, default and unused administrator accounts.",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-10-11",
+      "days_since_review": 396,
+      "days_overdue": 31
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-03",
+      "title": "Do not expose firewall administration pages to the internet unless there is a documented business need and either MFA or an allow list of trusted addresses is in place.",
+      "owner": "Network Engineer",
+      "last_reviewed": "2025-10-22",
+      "days_since_review": 385,
+      "days_overdue": 20
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.2",
+      "title": "Physical entry controls",
+      "owner": "Facilities Manager",
+      "last_reviewed": "2025-10-22",
+      "days_since_review": 385,
+      "days_overdue": 20
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.13",
+      "title": "Equipment maintenance",
+      "owner": "Facilities Manager",
+      "last_reviewed": "2025-10-24",
+      "days_since_review": 383,
+      "days_overdue": 18
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.2",
+      "title": "Privileged access rights",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-10-26",
+      "days_since_review": 381,
+      "days_overdue": 16
+    },
+    {
+      "scope": "ce",
+      "id": "CE-UAC-08",
+      "title": "Where passwords are used, protect against guessing with MFA, throttling (no more than 10 guesses in 5 minutes) or lockout after no more than 10 failures.",
+      "owner": "IT Manager",
+      "last_reviewed": "2025-11-05",
+      "days_since_review": 371,
+      "days_overdue": 6
+    },
+    {
+      "scope": "ce",
+      "id": "CE-FW-08",
+      "title": "For cloud services, use the provider's network and data flow controls (for example access rules and allow lists) where a firewall cannot be used.",
+      "owner": "Network Engineer",
+      "last_reviewed": "2025-11-06",
+      "days_since_review": 370,
+      "days_overdue": 5
+    }
+  ],
+  "no_review_date": [
+    {
+      "scope": "ce",
+      "id": "CE-SCO-05",
+      "title": "Decide whether personal devices (BYOD) may access organisational data. Those that do are in scope; keep a list or block them.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.18",
+      "title": "Access rights provisioning and review",
+      "owner": "Security Lead"
+    },
+    {
+      "scope": "iso",
+      "id": "A.7.9",
+      "title": "Assets off premises",
+      "owner": "Facilities Manager"
+    }
+  ],
+  "missing_evidence": [
+    {
+      "scope": "ce",
+      "id": "CE-FW-07",
+      "title": "Run a software firewall on devices that are used on untrusted networks such as home or public Wi-Fi.",
+      "status": "implemented",
+      "owner": "Network Engineer"
+    },
+    {
+      "scope": "ce",
+      "id": "CE-CFG-05",
+      "title": "Make sure users are authenticated before they can reach organisational data or services.",
+      "status": "implemented",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "ce",
+      "id": "CE-MAL-01",
+      "title": "Have a malware protection method active on every in-scope device.",
+      "status": "implemented",
+      "owner": "Endpoint Engineer"
+    },
+    {
+      "scope": "iso",
+      "id": "A.5.11",
+      "title": "Return of assets on exit",
+      "status": "partial",
+      "owner": "Security Lead"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.13",
+      "title": "Backup",
+      "status": "partial",
+      "owner": "IT Manager"
+    }
+  ],
+  "not_applicable": [
+    {
+      "scope": "ce",
+      "id": "CE-MAL-03",
+      "title": "If using application allow listing, only approved, validly signed applications may run, the approved list is kept current, and users cannot install unsigned ones.",
+      "justification": "Anti-malware software is used on every in-scope device, so allow listing is not relied on.",
+      "owner": "Endpoint Engineer"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.4",
+      "title": "Source code access",
+      "justification": "The group holds no bespoke source code. It buys packaged software only.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.25",
+      "title": "Secure development lifecycle",
+      "justification": "No software is developed in house or by suppliers for the group.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.28",
+      "title": "Secure coding",
+      "justification": "No software is developed in house or by suppliers for the group.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.29",
+      "title": "Security testing before release",
+      "justification": "No software is developed in house or by suppliers for the group.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.30",
+      "title": "Outsourced development oversight",
+      "justification": "No software development is outsourced.",
+      "owner": "IT Manager"
+    },
+    {
+      "scope": "iso",
+      "id": "A.8.31",
+      "title": "Separate development, test and live",
+      "justification": "No development environments exist. Packaged software is configured in production under change control.",
+      "owner": "IT Manager"
+    }
+  ],
+  "statement_of_applicability": {
+    "controls": 93,
+    "included": 87,
+    "excluded": 6,
+    "included_without_justification": 79
+  }
+}

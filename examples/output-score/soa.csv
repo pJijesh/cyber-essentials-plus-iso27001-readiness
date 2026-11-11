@@ -1,0 +1,94 @@
+control_id,theme,title,included,implementation_status,justification,evidence_ref,owner,ce_items_that_help
+A.5.1,Organisational,Information security policies,Yes,partial,Policy set drafted and awaiting board approval.,EVD-038,Security Lead,
+A.5.2,Organisational,Security roles and responsibilities,Yes,partial,Security lead named. Site level roles not yet defined.,EVD-039,Security Lead,
+A.5.3,Organisational,Separation of conflicting duties,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.4,Organisational,Management duty to enforce security,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.5,Organisational,Contact with authorities,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.6,Organisational,Contact with specialist security groups,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-040,Security Lead,
+A.5.7,Organisational,Threat intelligence,Yes,not started,No threat intelligence source subscribed yet.,,Security Lead,
+A.5.8,Organisational,Security in project work,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.9,Organisational,Inventory of information and assets,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-041,Security Lead,"CE-SCO-01 (partial, implemented); CE-SCO-03 (strong, implemented); CE-UPD-01 (partial, partial)"
+A.5.10,Organisational,Acceptable use rules,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-SCO-05 (partial, implemented)"
+A.5.11,Organisational,Return of assets on exit,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-UAC-03 (partial, implemented)"
+A.5.12,Organisational,Information classification,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-042,Security Lead,
+A.5.13,Organisational,Information labelling,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-043,Security Lead,
+A.5.14,Organisational,Information transfer rules,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-044,Security Lead,
+A.5.15,Organisational,Access control rules,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-CFG-05 (partial, implemented); CE-UAC-01 (partial, implemented)"
+A.5.16,Organisational,Identity lifecycle management,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-045,Security Lead,"CE-SCO-08 (partial, partial); CE-CFG-01 (partial, implemented); CE-UAC-01 (strong, implemented); CE-UAC-02 (strong, implemented)"
+A.5.17,Organisational,Authentication secrets management,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-046,Security Lead,"CE-FW-02 (partial, implemented); CE-CFG-02 (partial, partial); CE-UAC-02 (partial, implemented); CE-UAC-09 (strong, implemented); CE-UAC-10 (strong, partial); CE-UAC-11 (partial, implemented)"
+A.5.18,Organisational,Access rights provisioning and review,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-047,Security Lead,"CE-CFG-01 (partial, implemented); CE-UAC-01 (strong, implemented); CE-UAC-03 (strong, implemented); CE-UAC-06 (partial, partial); CE-UAC-07 (strong, partial); CE-UAC-12 (partial, implemented)"
+A.5.19,Organisational,Security in supplier relationships,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-048,Security Lead,"CE-SCO-04 (partial, partial); CE-SCO-08 (partial, partial); CE-UAC-12 (partial, implemented)"
+A.5.20,Organisational,Security terms in supplier agreements,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,
+A.5.21,Organisational,ICT supply chain security,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-049,Security Lead,
+A.5.22,Organisational,Supplier service monitoring and change,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-SCO-04 (partial, partial)"
+A.5.23,Organisational,Cloud service security,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-SCO-04 (strong, partial); CE-FW-08 (partial, partial); CE-UAC-04 (partial, partial)"
+A.5.24,Organisational,Incident management planning,Yes,not started,Incident plan to be written after the risk assessment.,,Security Lead,
+A.5.25,Organisational,Assessing security events,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.26,Organisational,Incident response,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,"CE-UAC-11 (partial, implemented)"
+A.5.27,Organisational,Learning from incidents,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.28,Organisational,Evidence collection,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,
+A.5.29,Organisational,Security during disruption,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,
+A.5.30,Organisational,ICT continuity readiness,Yes,not started,Continuity plan covers the main plant only.,,Security Lead,
+A.5.31,Organisational,Legal and contractual requirements,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-050,Security Lead,
+A.5.32,Organisational,Intellectual property,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.33,Organisational,Records protection,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.34,Organisational,Privacy and personal data protection,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.35,Organisational,Independent security review,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Security Lead,
+A.5.36,Organisational,Compliance with own policies and standards,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-051,Security Lead,
+A.5.37,Organisational,Documented operating procedures,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-052,Security Lead,
+A.6.1,People,Background screening,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-053,HR Manager,
+A.6.2,People,Employment terms and conditions,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-054,HR Manager,
+A.6.3,People,Awareness and training,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,HR Manager,"CE-UAC-10 (partial, partial)"
+A.6.4,People,Disciplinary process,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-055,HR Manager,
+A.6.5,People,Duties after leaving or role change,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-056,HR Manager,"CE-UAC-03 (partial, implemented); CE-UAC-07 (partial, partial)"
+A.6.6,People,Confidentiality agreements,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-057,HR Manager,
+A.6.7,People,Remote working,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-058,HR Manager,"CE-SCO-05 (partial, implemented); CE-SCO-06 (strong, implemented); CE-FW-07 (partial, implemented)"
+A.6.8,People,Security event reporting,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,HR Manager,"CE-UAC-11 (partial, implemented)"
+A.7.1,Physical,Physical perimeters,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-059,Facilities Manager,
+A.7.2,Physical,Physical entry controls,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-060,Facilities Manager,
+A.7.3,Physical,Securing offices and rooms,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-061,Facilities Manager,
+A.7.4,Physical,Physical monitoring,Yes,partial,CCTV at the main plant and design studio. Other sites rely on alarms only.,EVD-062,Facilities Manager,
+A.7.5,Physical,Environmental and physical threats,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Facilities Manager,
+A.7.6,Physical,Working in secure areas,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-063,Facilities Manager,
+A.7.7,Physical,Clear desk and clear screen,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,"CE-CFG-06 (partial, implemented)"
+A.7.8,Physical,Equipment siting and protection,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,Facilities Manager,
+A.7.9,Physical,Assets off premises,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-064,Facilities Manager,"CE-SCO-06 (partial, implemented)"
+A.7.10,Physical,Storage media,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,
+A.7.11,Physical,Supporting utilities,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-065,Facilities Manager,
+A.7.12,Physical,Cabling security,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-066,Facilities Manager,
+A.7.13,Physical,Equipment maintenance,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-067,Facilities Manager,
+A.7.14,Physical,Secure disposal or reuse,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-068,Facilities Manager,
+A.8.1,Technological,User endpoint devices,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-069,IT Manager,"CE-SCO-02 (partial, implemented); CE-SCO-03 (partial, implemented); CE-SCO-05 (strong, implemented); CE-FW-07 (partial, implemented); CE-CFG-06 (strong, implemented)"
+A.8.2,Technological,Privileged access rights,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-070,IT Manager,"CE-CFG-01 (partial, implemented); CE-UAC-05 (strong, implemented); CE-UAC-06 (strong, partial); CE-UAC-07 (strong, partial); CE-UAC-12 (partial, implemented)"
+A.8.3,Technological,Information access restriction,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,
+A.8.4,Technological,Source code access,No,not applicable,The group holds no bespoke source code. It buys packaged software only.,,IT Manager,
+A.8.5,Technological,Secure authentication,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-071,IT Manager,"CE-FW-03 (partial, implemented); CE-CFG-05 (strong, implemented); CE-CFG-06 (partial, implemented); CE-UAC-02 (partial, implemented); CE-UAC-04 (strong, partial); CE-UAC-05 (strong, implemented); CE-UAC-08 (strong, implemented); CE-UAC-09 (partial, implemented)"
+A.8.6,Technological,Capacity management,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-072,IT Manager,
+A.8.7,Technological,Malware protection,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-073,IT Manager,"CE-CFG-04 (partial, partial); CE-MAL-01 (strong, implemented); CE-MAL-02 (strong, implemented); CE-MAL-03 (strong, not applicable); CE-MAL-04 (partial, implemented)"
+A.8.8,Technological,Technical vulnerability management,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-074,IT Manager,"CE-UPD-01 (partial, partial); CE-UPD-02 (partial, not started); CE-UPD-03 (partial, not started); CE-UPD-04 (strong, partial); CE-UPD-05 (strong, partial); CE-UPD-06 (partial, not started); CE-UPD-07 (strong, partial)"
+A.8.9,Technological,Configuration management,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-075,IT Manager,"CE-FW-02 (partial, implemented); CE-FW-06 (partial, implemented); CE-CFG-02 (strong, partial); CE-CFG-03 (strong, implemented); CE-CFG-04 (partial, partial); CE-UPD-04 (partial, partial)"
+A.8.10,Technological,Information deletion,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,
+A.8.11,Technological,Data masking,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-076,IT Manager,
+A.8.12,Technological,Data leakage prevention,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-077,IT Manager,
+A.8.13,Technological,Backup,Yes,partial,Backups run for the main plant systems. Restore tests not yet recorded.,,IT Manager,
+A.8.14,Technological,Redundancy,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-078,IT Manager,
+A.8.15,Technological,Logging,Yes,partial,Central logging for identity and email only.,EVD-079,IT Manager,
+A.8.16,Technological,Monitoring activities,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,"CE-UPD-07 (partial, partial); CE-MAL-04 (partial, implemented)"
+A.8.17,Technological,Clock synchronisation,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-080,IT Manager,
+A.8.18,Technological,Privileged utility programs,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,
+A.8.19,Technological,Software installation on production systems,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-081,IT Manager,"CE-CFG-03 (partial, implemented); CE-MAL-03 (strong, not applicable)"
+A.8.20,Technological,Network security,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-082,IT Manager,"CE-FW-01 (strong, partial); CE-FW-03 (strong, implemented); CE-FW-04 (strong, partial); CE-FW-05 (partial, partial); CE-FW-06 (partial, implemented)"
+A.8.21,Technological,Network service security,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,"CE-FW-04 (partial, partial)"
+A.8.22,Technological,Network segregation,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,"CE-SCO-07 (partial, not started); CE-FW-01 (partial, partial); CE-FW-08 (partial, partial); CE-UPD-02 (partial, not started)"
+A.8.23,Technological,Web filtering,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,,"CE-MAL-02 (partial, implemented)"
+A.8.24,Technological,Cryptography use,Yes,not started,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",,IT Manager,
+A.8.25,Technological,Secure development lifecycle,No,not applicable,No software is developed in house or by suppliers for the group.,,IT Manager,
+A.8.26,Technological,Application security requirements,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-083,IT Manager,
+A.8.27,Technological,Secure architecture principles,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-084,IT Manager,
+A.8.28,Technological,Secure coding,No,not applicable,No software is developed in house or by suppliers for the group.,,IT Manager,
+A.8.29,Technological,Security testing before release,No,not applicable,No software is developed in house or by suppliers for the group.,,IT Manager,
+A.8.30,Technological,Outsourced development oversight,No,not applicable,No software development is outsourced.,,IT Manager,
+A.8.31,Technological,"Separate development, test and live",No,not applicable,No development environments exist. Packaged software is configured in production under change control.,,IT Manager,
+A.8.32,Technological,Change management,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-085,IT Manager,"CE-FW-05 (partial, partial)"
+A.8.33,Technological,Test data protection,Yes,implemented,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-086,IT Manager,
+A.8.34,Technological,Protecting systems during audit testing,Yes,partial,"TO COMPLETE: record the risk, legal or contractual reason this control is needed",EVD-087,IT Manager,

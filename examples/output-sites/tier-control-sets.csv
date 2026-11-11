@@ -1,0 +1,139 @@
+id,scope,item,minimum_tier,minimum_tier_name
+CE-SCO-01,Cyber Essentials,"Write down the scope boundary: which business units, networks and locations are in, and agree it with the assessor before starting.",2,Enhanced
+CE-SCO-02,Cyber Essentials,Include every end-user device that can reach organisational data or services. A scope that leaves out user devices is not acceptable.,2,Enhanced
+CE-SCO-03,Cyber Essentials,"Keep an up-to-date inventory of in-scope devices (servers, user devices, firewalls, routers) showing owner, operating system and support status.",1,Baseline
+CE-SCO-04,Cyber Essentials,"List every cloud service that holds or processes organisational data, who is responsible for each control (you or the provider), and keep all of them in scope.",1,Baseline
+CE-SCO-05,Cyber Essentials,Decide whether personal devices (BYOD) may access organisational data. Those that do are in scope; keep a list or block them.,2,Enhanced
+CE-SCO-06,Cyber Essentials,"Cover home and remote working: devices used at home are in scope, and a router supplied by the organisation is in scope.",2,Enhanced
+CE-SCO-07,Cyber Essentials,"If anything is excluded, justify the exclusion, explain how it is separated from the rest, and list every legal entity that is in scope.",2,Enhanced
+CE-SCO-08,Cyber Essentials,"Bring accounts used by suppliers, contractors and managed service providers into scope, and any organisation-owned device lent to a third party.",2,Enhanced
+CE-FW-01,Cyber Essentials,"Protect every in-scope device with a correctly configured firewall: a boundary firewall, or a firewall on the device itself.",1,Baseline
+CE-FW-02,Cyber Essentials,"Change the default administrator password on firewalls and routers to a strong, unique one, or switch remote administration off.",1,Baseline
+CE-FW-03,Cyber Essentials,Do not expose firewall administration pages to the internet unless there is a documented business need and either MFA or an allow list of trusted addresses is in place.,1,Baseline
+CE-FW-04,Cyber Essentials,Block unauthenticated inbound connections by default and only open what is needed.,1,Baseline
+CE-FW-05,Cyber Essentials,"Have each inbound rule approved and documented by an authorised person, with the business reason recorded.",1,Baseline
+CE-FW-06,Cyber Essentials,Remove or disable inbound rules as soon as they are no longer needed.,1,Baseline
+CE-FW-07,Cyber Essentials,Run a software firewall on devices that are used on untrusted networks such as home or public Wi-Fi.,1,Baseline
+CE-FW-08,Cyber Essentials,"For cloud services, use the provider's network and data flow controls (for example access rules and allow lists) where a firewall cannot be used.",1,Baseline
+CE-CFG-01,Cyber Essentials,"Regularly remove or disable accounts that are not needed, including guest, default and unused administrator accounts.",1,Baseline
+CE-CFG-02,Cyber Essentials,Change default or easily guessed passwords on every device and application.,1,Baseline
+CE-CFG-03,Cyber Essentials,"Remove or disable software, utilities and network services that are not needed.",1,Baseline
+CE-CFG-04,Cyber Essentials,Turn off auto-run features that start files without the user choosing to.,1,Baseline
+CE-CFG-05,Cyber Essentials,Make sure users are authenticated before they can reach organisational data or services.,1,Baseline
+CE-CFG-06,Cyber Essentials,"Lock devices: require a password, PIN or biometric to unlock, and limit repeated guessing (for example no more than 10 attempts, or throttling).",1,Baseline
+CE-UPD-01,Cyber Essentials,Make sure all in-scope software is licensed and still supported by its vendor.,1,Baseline
+CE-UPD-02,Cyber Essentials,"Remove software that has gone out of support, or take the device out of scope using a separated network sub-set that has no internet access.",1,Baseline
+CE-UPD-03,Cyber Essentials,Turn on automatic updates wherever the product offers them.,1,Baseline
+CE-UPD-04,Cyber Essentials,"Install operating system and firmware updates within 14 days of release when they fix vulnerabilities rated critical or high, scored 7 or more on CVSS v3, or have no severity given.",1,Baseline
+CE-UPD-05,Cyber Essentials,"Install application updates, including browser extensions and plug-ins, within 14 days of release under the same severity rules.",1,Baseline
+CE-UPD-06,Cyber Essentials,"If an update bundles several fixes and any one is critical or high, install the whole bundle within 14 days.",1,Baseline
+CE-UPD-07,Cyber Essentials,"Practical measure: be able to show which in-scope devices are missing critical or high updates older than 14 days, including devices that are offline.",1,Baseline
+CE-UAC-01,Cyber Essentials,"Have a process to request, approve and create user accounts.",1,Baseline
+CE-UAC-02,Cyber Essentials,Give each person unique credentials before they can use applications or devices; avoid shared accounts.,1,Baseline
+CE-UAC-03,Cyber Essentials,"Remove or disable accounts when they are no longer needed, for example when someone leaves or after a set period of inactivity.",1,Baseline
+CE-UAC-04,Cyber Essentials,"Turn on MFA for every cloud service that offers it, whether the option is free, bundled or paid.",1,Baseline
+CE-UAC-05,Cyber Essentials,Require MFA on administrator accounts and on any account that can be reached from the internet.,1,Baseline
+CE-UAC-06,Cyber Essentials,"Use separate administrator accounts for administration only, never for email, web browsing or everyday work.",1,Baseline
+CE-UAC-07,Cyber Essentials,"Take away special privileges when they are no longer needed, for example after a change of role.",1,Baseline
+CE-UAC-08,Cyber Essentials,"Where passwords are used, protect against guessing with MFA, throttling (no more than 10 guesses in 5 minutes) or lockout after no more than 10 failures.",1,Baseline
+CE-UAC-09,Cyber Essentials,"Apply a password quality control: MFA, or at least 12 characters, or at least 8 characters with common passwords blocked.",1,Baseline
+CE-UAC-10,Cyber Essentials,"Help people choose unique passwords, for example by providing a password manager and guidance on long passphrases, and do not force routine expiry.",1,Baseline
+CE-UAC-11,Cyber Essentials,Have a process to change passwords promptly when a compromise is known or suspected.,1,Baseline
+CE-UAC-12,Cyber Essentials,Apply the same account controls to third-party accounts such as support and managed service provider logins.,1,Baseline
+CE-MAL-01,Cyber Essentials,Have a malware protection method active on every in-scope device.,1,Baseline
+CE-MAL-02,Cyber Essentials,"If using anti-malware software, keep it updated, make sure it stops malware running, and make it block known malicious websites.",1,Baseline
+CE-MAL-03,Cyber Essentials,"If using application allow listing, only approved, validly signed applications may run, the approved list is kept current, and users cannot install unsigned ones.",1,Baseline
+CE-MAL-04,Cyber Essentials,"Practical measure: check regularly that protection is present and current on every device, including new builds and laptops that are rarely online.",1,Baseline
+A.5.1,ISO Annex A,Information security policies,2,Enhanced
+A.5.2,ISO Annex A,Security roles and responsibilities,2,Enhanced
+A.5.3,ISO Annex A,Separation of conflicting duties,3,Full
+A.5.4,ISO Annex A,Management duty to enforce security,3,Full
+A.5.5,ISO Annex A,Contact with authorities,3,Full
+A.5.6,ISO Annex A,Contact with specialist security groups,3,Full
+A.5.7,ISO Annex A,Threat intelligence,3,Full
+A.5.8,ISO Annex A,Security in project work,3,Full
+A.5.9,ISO Annex A,Inventory of information and assets,2,Enhanced
+A.5.10,ISO Annex A,Acceptable use rules,3,Full
+A.5.11,ISO Annex A,Return of assets on exit,3,Full
+A.5.12,ISO Annex A,Information classification,3,Full
+A.5.13,ISO Annex A,Information labelling,3,Full
+A.5.14,ISO Annex A,Information transfer rules,3,Full
+A.5.15,ISO Annex A,Access control rules,2,Enhanced
+A.5.16,ISO Annex A,Identity lifecycle management,2,Enhanced
+A.5.17,ISO Annex A,Authentication secrets management,2,Enhanced
+A.5.18,ISO Annex A,Access rights provisioning and review,2,Enhanced
+A.5.19,ISO Annex A,Security in supplier relationships,2,Enhanced
+A.5.20,ISO Annex A,Security terms in supplier agreements,3,Full
+A.5.21,ISO Annex A,ICT supply chain security,3,Full
+A.5.22,ISO Annex A,Supplier service monitoring and change,3,Full
+A.5.23,ISO Annex A,Cloud service security,2,Enhanced
+A.5.24,ISO Annex A,Incident management planning,2,Enhanced
+A.5.25,ISO Annex A,Assessing security events,3,Full
+A.5.26,ISO Annex A,Incident response,2,Enhanced
+A.5.27,ISO Annex A,Learning from incidents,3,Full
+A.5.28,ISO Annex A,Evidence collection,3,Full
+A.5.29,ISO Annex A,Security during disruption,2,Enhanced
+A.5.30,ISO Annex A,ICT continuity readiness,3,Full
+A.5.31,ISO Annex A,Legal and contractual requirements,3,Full
+A.5.32,ISO Annex A,Intellectual property,3,Full
+A.5.33,ISO Annex A,Records protection,3,Full
+A.5.34,ISO Annex A,Privacy and personal data protection,3,Full
+A.5.35,ISO Annex A,Independent security review,3,Full
+A.5.36,ISO Annex A,Compliance with own policies and standards,3,Full
+A.5.37,ISO Annex A,Documented operating procedures,3,Full
+A.6.1,ISO Annex A,Background screening,3,Full
+A.6.2,ISO Annex A,Employment terms and conditions,3,Full
+A.6.3,ISO Annex A,Awareness and training,2,Enhanced
+A.6.4,ISO Annex A,Disciplinary process,3,Full
+A.6.5,ISO Annex A,Duties after leaving or role change,2,Enhanced
+A.6.6,ISO Annex A,Confidentiality agreements,3,Full
+A.6.7,ISO Annex A,Remote working,2,Enhanced
+A.6.8,ISO Annex A,Security event reporting,2,Enhanced
+A.7.1,ISO Annex A,Physical perimeters,3,Full
+A.7.2,ISO Annex A,Physical entry controls,3,Full
+A.7.3,ISO Annex A,Securing offices and rooms,3,Full
+A.7.4,ISO Annex A,Physical monitoring,3,Full
+A.7.5,ISO Annex A,Environmental and physical threats,3,Full
+A.7.6,ISO Annex A,Working in secure areas,3,Full
+A.7.7,ISO Annex A,Clear desk and clear screen,3,Full
+A.7.8,ISO Annex A,Equipment siting and protection,3,Full
+A.7.9,ISO Annex A,Assets off premises,3,Full
+A.7.10,ISO Annex A,Storage media,3,Full
+A.7.11,ISO Annex A,Supporting utilities,3,Full
+A.7.12,ISO Annex A,Cabling security,3,Full
+A.7.13,ISO Annex A,Equipment maintenance,3,Full
+A.7.14,ISO Annex A,Secure disposal or reuse,2,Enhanced
+A.8.1,ISO Annex A,User endpoint devices,2,Enhanced
+A.8.2,ISO Annex A,Privileged access rights,2,Enhanced
+A.8.3,ISO Annex A,Information access restriction,3,Full
+A.8.4,ISO Annex A,Source code access,3,Full
+A.8.5,ISO Annex A,Secure authentication,2,Enhanced
+A.8.6,ISO Annex A,Capacity management,3,Full
+A.8.7,ISO Annex A,Malware protection,2,Enhanced
+A.8.8,ISO Annex A,Technical vulnerability management,2,Enhanced
+A.8.9,ISO Annex A,Configuration management,2,Enhanced
+A.8.10,ISO Annex A,Information deletion,3,Full
+A.8.11,ISO Annex A,Data masking,3,Full
+A.8.12,ISO Annex A,Data leakage prevention,3,Full
+A.8.13,ISO Annex A,Backup,2,Enhanced
+A.8.14,ISO Annex A,Redundancy,3,Full
+A.8.15,ISO Annex A,Logging,2,Enhanced
+A.8.16,ISO Annex A,Monitoring activities,3,Full
+A.8.17,ISO Annex A,Clock synchronisation,3,Full
+A.8.18,ISO Annex A,Privileged utility programs,3,Full
+A.8.19,ISO Annex A,Software installation on production systems,3,Full
+A.8.20,ISO Annex A,Network security,3,Full
+A.8.21,ISO Annex A,Network service security,3,Full
+A.8.22,ISO Annex A,Network segregation,3,Full
+A.8.23,ISO Annex A,Web filtering,3,Full
+A.8.24,ISO Annex A,Cryptography use,3,Full
+A.8.25,ISO Annex A,Secure development lifecycle,3,Full
+A.8.26,ISO Annex A,Application security requirements,3,Full
+A.8.27,ISO Annex A,Secure architecture principles,3,Full
+A.8.28,ISO Annex A,Secure coding,3,Full
+A.8.29,ISO Annex A,Security testing before release,3,Full
+A.8.30,ISO Annex A,Outsourced development oversight,3,Full
+A.8.31,ISO Annex A,"Separate development, test and live",3,Full
+A.8.32,ISO Annex A,Change management,3,Full
+A.8.33,ISO Annex A,Test data protection,3,Full
+A.8.34,ISO Annex A,Protecting systems during audit testing,3,Full

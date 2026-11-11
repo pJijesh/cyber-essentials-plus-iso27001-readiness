@@ -1,0 +1,94 @@
+id,theme,short_title
+A.5.1,Organisational,Information security policies
+A.5.2,Organisational,Security roles and responsibilities
+A.5.3,Organisational,Separation of conflicting duties
+A.5.4,Organisational,Management duty to enforce security
+A.5.5,Organisational,Contact with authorities
+A.5.6,Organisational,Contact with specialist security groups
+A.5.7,Organisational,Threat intelligence
+A.5.8,Organisational,Security in project work
+A.5.9,Organisational,Inventory of information and assets
+A.5.10,Organisational,Acceptable use rules
+A.5.11,Organisational,Return of assets on exit
+A.5.12,Organisational,Information classification
+A.5.13,Organisational,Information labelling
+A.5.14,Organisational,Information transfer rules
+A.5.15,Organisational,Access control rules
+A.5.16,Organisational,Identity lifecycle management
+A.5.17,Organisational,Authentication secrets management
+A.5.18,Organisational,Access rights provisioning and review
+A.5.19,Organisational,Security in supplier relationships
+A.5.20,Organisational,Security terms in supplier agreements
+A.5.21,Organisational,ICT supply chain security
+A.5.22,Organisational,Supplier service monitoring and change
+A.5.23,Organisational,Cloud service security
+A.5.24,Organisational,Incident management planning
+A.5.25,Organisational,Assessing security events
+A.5.26,Organisational,Incident response
+A.5.27,Organisational,Learning from incidents
+A.5.28,Organisational,Evidence collection
+A.5.29,Organisational,Security during disruption
+A.5.30,Organisational,ICT continuity readiness
+A.5.31,Organisational,Legal and contractual requirements
+A.5.32,Organisational,Intellectual property
+A.5.33,Organisational,Records protection
+A.5.34,Organisational,Privacy and personal data protection
+A.5.35,Organisational,Independent security review
+A.5.36,Organisational,Compliance with own policies and standards
+A.5.37,Organisational,Documented operating procedures
+A.6.1,People,Background screening
+A.6.2,People,Employment terms and conditions
+A.6.3,People,Awareness and training
+A.6.4,People,Disciplinary process
+A.6.5,People,Duties after leaving or role change
+A.6.6,People,Confidentiality agreements
+A.6.7,People,Remote working
+A.6.8,People,Security event reporting
+A.7.1,Physical,Physical perimeters
+A.7.2,Physical,Physical entry controls
+A.7.3,Physical,Securing offices and rooms
+A.7.4,Physical,Physical monitoring
+A.7.5,Physical,Environmental and physical threats
+A.7.6,Physical,Working in secure areas
+A.7.7,Physical,Clear desk and clear screen
+A.7.8,Physical,Equipment siting and protection
+A.7.9,Physical,Assets off premises
+A.7.10,Physical,Storage media
+A.7.11,Physical,Supporting utilities
+A.7.12,Physical,Cabling security
+A.7.13,Physical,Equipment maintenance
+A.7.14,Physical,Secure disposal or reuse
+A.8.1,Technological,User endpoint devices
+A.8.2,Technological,Privileged access rights
+A.8.3,Technological,Information access restriction
+A.8.4,Technological,Source code access
+A.8.5,Technological,Secure authentication
+A.8.6,Technological,Capacity management
+A.8.7,Technological,Malware protection
+A.8.8,Technological,Technical vulnerability management
+A.8.9,Technological,Configuration management
+A.8.10,Technological,Information deletion
+A.8.11,Technological,Data masking
+A.8.12,Technological,Data leakage prevention
+A.8.13,Technological,Backup
+A.8.14,Technological,Redundancy
+A.8.15,Technological,Logging
+A.8.16,Technological,Monitoring activities
+A.8.17,Technological,Clock synchronisation
+A.8.18,Technological,Privileged utility programs
+A.8.19,Technological,Software installation on production systems
+A.8.20,Technological,Network security
+A.8.21,Technological,Network service security
+A.8.22,Technological,Network segregation
+A.8.23,Technological,Web filtering
+A.8.24,Technological,Cryptography use
+A.8.25,Technological,Secure development lifecycle
+A.8.26,Technological,Application security requirements
+A.8.27,Technological,Secure architecture principles
+A.8.28,Technological,Secure coding
+A.8.29,Technological,Security testing before release
+A.8.30,Technological,Outsourced development oversight
+A.8.31,Technological,"Separate development, test and live"
+A.8.32,Technological,Change management
+A.8.33,Technological,Test data protection
+A.8.34,Technological,Protecting systems during audit testing

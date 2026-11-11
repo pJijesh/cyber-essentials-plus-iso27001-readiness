@@ -1,0 +1,156 @@
+ce_id,annexa_id,strength,note
+CE-SCO-01,A.5.9,partial,"The CE boundary lists devices and services but not information assets. ISMS scope itself is clause 4.3, a requirement rather than a control, and is defined differently."
+CE-SCO-02,A.8.1,partial,"Covers which user devices are in scope, not how each is protected."
+CE-SCO-03,A.5.9,strong,"A device and service inventory is a large part of the asset inventory, but ISO also expects information assets and owners."
+CE-SCO-03,A.8.1,partial,Supports knowing which endpoints exist.
+CE-SCO-04,A.5.19,partial,"Cloud suppliers are suppliers, but supplier risk assessment goes beyond CE."
+CE-SCO-04,A.5.22,partial,Supports ongoing awareness of supplier services.
+CE-SCO-04,A.5.23,strong,A cloud service register with responsibilities is core evidence. ISO also expects a policy and exit planning.
+CE-SCO-05,A.5.10,partial,Acceptable use of personal devices is one piece of acceptable use.
+CE-SCO-05,A.6.7,partial,Personal devices are often used remotely.
+CE-SCO-05,A.8.1,strong,Deciding and controlling personal device use.
+CE-SCO-06,A.6.7,strong,"Home and remote working arrangements, limited to the technical side."
+CE-SCO-06,A.7.9,partial,Equipment used away from the office.
+CE-SCO-07,A.8.22,partial,Segregation evidence for excluded networks supports network segregation.
+CE-SCO-08,A.5.16,partial,Third-party accounts need an identity lifecycle.
+CE-SCO-08,A.5.19,partial,Third-party access is one part of supplier security.
+CE-FW-01,A.8.20,strong,Boundary and host firewalls are central to network security.
+CE-FW-01,A.8.22,partial,Firewalls can enforce segregation if rules are designed for it.
+CE-FW-02,A.5.17,partial,Administrator passwords are authentication secrets.
+CE-FW-02,A.8.9,partial,Changing defaults is part of secure configuration.
+CE-FW-03,A.8.5,partial,MFA or allow listing on admin access.
+CE-FW-03,A.8.20,strong,Restricting management interfaces.
+CE-FW-04,A.8.20,strong,Default deny at the boundary.
+CE-FW-04,A.8.21,partial,Controls which network services are exposed.
+CE-FW-05,A.8.20,partial,Approved rules support network control.
+CE-FW-05,A.8.32,partial,Rule changes are changes and should follow change management.
+CE-FW-06,A.8.9,partial,Removing obsolete configuration.
+CE-FW-06,A.8.20,partial,Rule hygiene.
+CE-FW-07,A.6.7,partial,Remote working technical measure.
+CE-FW-07,A.8.1,partial,Endpoint protection when away from the office network.
+CE-FW-08,A.5.23,partial,Cloud network controls are part of cloud security.
+CE-FW-08,A.8.22,partial,Cloud network rules segregate workloads.
+CE-CFG-01,A.5.16,partial,Disabling unused accounts supports identity lifecycle.
+CE-CFG-01,A.5.18,partial,Supports removing access that is no longer needed.
+CE-CFG-01,A.8.2,partial,Includes unused administrator accounts.
+CE-CFG-02,A.5.17,partial,Default passwords are weak secrets.
+CE-CFG-02,A.8.9,strong,Removing defaults is a core configuration task.
+CE-CFG-03,A.8.9,strong,Reducing the attack surface through configuration.
+CE-CFG-03,A.8.19,partial,Controlling what software is installed.
+CE-CFG-04,A.8.7,partial,Reduces one malware route.
+CE-CFG-04,A.8.9,partial,A specific hardening setting.
+CE-CFG-05,A.5.15,partial,One part of access control rules.
+CE-CFG-05,A.8.5,strong,Requiring sign-in before access.
+CE-CFG-06,A.7.7,partial,Screen locking supports clear screen.
+CE-CFG-06,A.8.1,strong,Device locking is a standard endpoint measure.
+CE-CFG-06,A.8.5,partial,Unlock credentials and guessing limits.
+CE-UPD-01,A.5.9,partial,Needs an accurate view of software in use.
+CE-UPD-01,A.8.8,partial,Supported software is a precondition for fixing vulnerabilities.
+CE-UPD-02,A.8.8,partial,Removing unfixable software.
+CE-UPD-02,A.8.22,partial,Isolating legacy systems relies on segregation.
+CE-UPD-03,A.8.8,partial,Automatic updates reduce exposure time.
+CE-UPD-04,A.8.8,strong,The 14 day rule is a concrete vulnerability management target. ISO expects a wider process including assessing exposure and deciding on exceptions.
+CE-UPD-04,A.8.9,partial,Firmware and configuration baselines.
+CE-UPD-05,A.8.8,strong,Application patching within a set time.
+CE-UPD-06,A.8.8,partial,A rule about how updates are applied.
+CE-UPD-07,A.8.8,strong,Measuring patch status is evidence for vulnerability management.
+CE-UPD-07,A.8.16,partial,Reporting on device state supports monitoring.
+CE-UAC-01,A.5.15,partial,Part of access control rules.
+CE-UAC-01,A.5.16,strong,An account creation and approval process.
+CE-UAC-01,A.5.18,strong,Approval before access is granted.
+CE-UAC-02,A.5.16,strong,Unique identities.
+CE-UAC-02,A.5.17,partial,Individual credentials.
+CE-UAC-02,A.8.5,partial,Individual authentication.
+CE-UAC-03,A.5.11,partial,Access removal alongside return of assets.
+CE-UAC-03,A.5.18,strong,Removing access when no longer needed.
+CE-UAC-03,A.6.5,partial,Leaver handling on the technical side.
+CE-UAC-04,A.5.23,partial,Cloud service sign-in security.
+CE-UAC-04,A.8.5,strong,MFA on cloud services.
+CE-UAC-05,A.8.2,strong,Protecting privileged accounts.
+CE-UAC-05,A.8.5,strong,MFA for admin and internet-facing accounts.
+CE-UAC-06,A.5.18,partial,Supports least privilege.
+CE-UAC-06,A.8.2,strong,Separating admin accounts from everyday use.
+CE-UAC-07,A.5.18,strong,Access rights change with role.
+CE-UAC-07,A.6.5,partial,Role changes are one trigger.
+CE-UAC-07,A.8.2,strong,Reviewing and removing privileges.
+CE-UAC-08,A.8.5,strong,Guessing protection.
+CE-UAC-09,A.5.17,strong,Password quality rules.
+CE-UAC-09,A.8.5,partial,Authentication strength.
+CE-UAC-10,A.5.17,strong,Supporting good secret handling.
+CE-UAC-10,A.6.3,partial,Part of staff guidance and awareness.
+CE-UAC-11,A.5.17,partial,Responding to exposed secrets.
+CE-UAC-11,A.5.26,partial,A credential compromise is an incident.
+CE-UAC-11,A.6.8,partial,Reporting suspected compromise.
+CE-UAC-12,A.5.18,partial,Access rights for third parties.
+CE-UAC-12,A.5.19,partial,Third-party access governance.
+CE-UAC-12,A.8.2,partial,Supplier admin access.
+CE-MAL-01,A.8.7,strong,Malware protection on all devices.
+CE-MAL-02,A.8.7,strong,Anti-malware software.
+CE-MAL-02,A.8.23,partial,Blocking malicious sites is one part of web filtering.
+CE-MAL-03,A.8.7,strong,Allow listing is a malware control.
+CE-MAL-03,A.8.19,strong,Controls software installation.
+CE-MAL-04,A.8.7,partial,Coverage checking.
+CE-MAL-04,A.8.16,partial,Reporting supports monitoring.
+,A.5.1,none,"CE does not require a policy set. ISO expects approved, communicated policies."
+,A.5.2,none,CE does not require defined security roles.
+,A.5.3,none,CE does not address separation of conflicting duties beyond separate admin accounts.
+,A.5.4,none,Management responsibility is an ISMS leadership matter. CE has a board declaration only.
+,A.5.5,none,CE does not cover this organisational control.
+,A.5.6,none,CE does not cover this organisational control.
+,A.5.7,none,CE has no threat intelligence element. New control in the 2022 edition.
+,A.5.8,none,CE does not cover project governance.
+,A.5.12,none,CE has no classification scheme.
+,A.5.13,none,CE has no labelling requirement.
+,A.5.14,none,CE does not cover information transfer rules.
+,A.5.20,none,"CE does not require security terms in supplier contracts, except that cloud responsibilities must be understood."
+,A.5.21,none,CE does not cover the wider ICT supply chain.
+,A.5.24,none,CE has no incident management requirement.
+,A.5.25,none,CE has no incident management requirement.
+,A.5.27,none,CE has no lessons learned requirement.
+,A.5.28,none,CE has no evidence collection requirement.
+,A.5.29,none,CE does not cover continuity. Backup appears in the guidance but is not a technical requirement.
+,A.5.30,none,CE does not cover continuity. New control in the 2022 edition.
+,A.5.31,none,CE does not cover legal and contractual requirements.
+,A.5.32,none,CE does not cover this organisational control.
+,A.5.33,none,CE does not cover this organisational control.
+,A.5.34,none,CE is not a privacy standard.
+,A.5.35,none,"CE Plus is an independent technical test, but ISO expects an independent review of the security approach."
+,A.5.36,none,CE has no internal compliance review cycle.
+,A.5.37,none,CE does not require documented operating procedures.
+,A.6.1,none,CE does not cover people screening.
+,A.6.2,none,CE does not cover employment terms.
+,A.6.4,none,CE does not cover discipline.
+,A.6.6,none,CE does not cover confidentiality agreements.
+,A.7.1,none,CE is a technical scheme and does not assess physical security.
+,A.7.2,none,CE does not assess physical entry controls.
+,A.7.3,none,CE does not assess physical security.
+,A.7.4,none,CE does not assess physical monitoring. New control in the 2022 edition.
+,A.7.5,none,CE does not assess environmental threats.
+,A.7.6,none,CE does not assess secure areas.
+,A.7.8,none,CE does not assess equipment siting.
+,A.7.10,none,CE does not cover storage media handling.
+,A.7.11,none,CE does not cover utilities.
+,A.7.12,none,CE does not cover cabling.
+,A.7.13,none,CE does not cover equipment maintenance.
+,A.7.14,none,CE does not cover disposal.
+,A.8.3,none,CE requires authentication but not data level access restriction.
+,A.8.4,none,Bespoke code is out of CE scope by default.
+,A.8.6,none,CE has no capacity management requirement.
+,A.8.10,none,CE has no deletion requirement. New control in the 2022 edition.
+,A.8.11,none,CE has no data masking requirement. New control in the 2022 edition.
+,A.8.12,none,CE has no data leakage prevention requirement. New control in the 2022 edition.
+,A.8.13,none,Backup is mentioned in CE guidance only and is not a technical requirement.
+,A.8.14,none,CE has no redundancy requirement.
+,A.8.15,none,CE does not require logging.
+,A.8.17,none,CE has no time synchronisation requirement.
+,A.8.18,none,CE does not cover privileged utility programs.
+,A.8.24,none,CE has no cryptography requirement. Device encryption is common practice but is not a CE requirement.
+,A.8.25,none,"CE refers to a software security code of practice for application development, but bespoke code is out of scope by default."
+,A.8.26,none,Bespoke application development is out of CE scope by default.
+,A.8.27,none,Bespoke application development is out of CE scope by default.
+,A.8.28,none,Bespoke application development is out of CE scope by default. New control in the 2022 edition.
+,A.8.29,none,Bespoke application development is out of CE scope by default.
+,A.8.30,none,Bespoke application development is out of CE scope by default.
+,A.8.31,none,Bespoke application development is out of CE scope by default.
+,A.8.33,none,CE has no test data requirement.
+,A.8.34,none,CE has no audit testing requirement.

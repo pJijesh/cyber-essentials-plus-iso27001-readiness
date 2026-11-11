@@ -1,0 +1,14 @@
+flowchart TD
+    A["Sites CSV<br/>headcount, data sensitivity,<br/>regulated data, IT maturity, connectivity"]
+    B["Config file<br/>factors, weights, points"]
+    C["Weighted score<br/>0 to 100"]
+    D["Tier by score<br/>using thresholds"]
+    E["Floor rules<br/>for example regulated data<br/>never goes in the lowest tier"]
+    F["Final tier"]
+    G["Minimum control set<br/>cumulative per tier"]
+    H["Reports<br/>site-tiers.csv, sites-report.md,<br/>tier-control-sets.csv, sites.json"]
+    A --> C
+    B --> C
+    C --> D --> E --> F --> G --> H
+    B --> E
+    B --> G

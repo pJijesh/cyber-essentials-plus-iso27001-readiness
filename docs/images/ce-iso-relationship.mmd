@@ -1,0 +1,7 @@
+flowchart LR
+    CE["Cyber Essentials<br/>Five technical themes<br/>Self-assessment marked by an assessor<br/>Certificate valid 12 months"]
+    CEP["Cyber Essentials Plus<br/>Same requirements<br/>Hands-on technical test:<br/>external scan, sample devices"]
+    ISO["ISO/IEC 27001:2022<br/>Management system, clauses 4 to 10<br/>Annex A: 93 controls in 4 themes<br/>Statement of Applicability"]
+    CE -->|"technical verification of the same controls"| CEP
+    CE -.->|"30 of 93 controls get a partial or strong<br/>contribution. None is fully covered.<br/>63 have no Cyber Essentials item"| ISO
+    CEP -.->|"stronger evidence for those 30,<br/>no extra scope"| ISO

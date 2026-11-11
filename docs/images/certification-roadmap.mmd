@@ -1,0 +1,14 @@
+flowchart TD
+    A["Illustrative timeline. Months 0 to 1<br/>Mandate and scope<br/>Board sponsor, entities, sites,<br/>Cyber Essentials boundary, ISMS scope"]
+    B["Months 1 to 2<br/>Baseline<br/>Run init and score for the gap view<br/>Run sites to tier each location"]
+    C["Months 2 to 5<br/>Close Cyber Essentials gaps<br/>Cloud MFA, 14 day patching,<br/>no unsupported software, inventory"]
+    D["Cyber Essentials<br/>verified self-assessment<br/>Board declaration, assessor marks answers"]
+    E["Within 3 months of the basic<br/>certificate (verify current rule)<br/>Cyber Essentials Plus<br/>Pre-scan and patch, external scan,<br/>sample device tests"]
+    F["Months 2 to 9, in parallel<br/>Build the ISMS<br/>Risk assessment, treatment plan,<br/>Statement of Applicability, policies"]
+    G["Months 8 to 10<br/>Internal audit and<br/>management review"]
+    H["Months 10 to 12<br/>ISO certification audit<br/>Stage 1 then Stage 2"]
+    I["Every year<br/>Renew Cyber Essentials and Plus<br/>ISO surveillance audit<br/>Three year ISO cycle"]
+    A --> B --> C --> D --> E
+    B --> F --> G --> H
+    E --> I
+    H --> I

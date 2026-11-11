@@ -1,0 +1,7 @@
+site,country,headcount,data_sensitivity,regulated_data,it_maturity,connectivity,local_requirements_note
+Northgate Works,United Kingdom,310,high,yes,high,good,Example note: customer contracts require annual penetration testing. Confirm with commercial team.
+Calder Design Studio,United Kingdom,28,high,no,medium,good,Holds unreleased product designs. Local advice not yet requested.
+Rhenmark Plant,Germany,180,medium,yes,medium,good,Not completed. Ask local counsel which obligations apply to employee and customer data.
+Silvermere Assembly,Poland,95,medium,no,medium,adequate,Not completed.
+Ashgrove Plant,Mexico,140,medium,yes,low,adequate,Not completed. Ask local counsel which obligations apply.
+Tidewater Sales Office,Malaysia,12,low,no,low,poor,

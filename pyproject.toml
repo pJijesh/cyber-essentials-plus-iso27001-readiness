@@ -1,0 +1,12 @@
+[project]
+name = "cyber-essentials-plus-iso27001-readiness"
+version = "0.1.0"
+description = "Readiness kit for Cyber Essentials Plus and ISO/IEC 27001: evidence tracker, gap scorer and proportionate site tiering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jijesh Puliyappottammal" }]
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

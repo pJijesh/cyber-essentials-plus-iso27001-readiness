@@ -1,0 +1,7 @@
+site,country,headcount,score,score_tier,floors_applied,tier,tier_name,drivers,ce_items_required,iso_controls_required,local_requirements_note
+Ashgrove Plant,Mexico,140,72.7,3,,3,Full,regulated_data (12); it_maturity (8); data_sensitivity (6),45,93,Not completed. Ask local counsel which obligations apply.
+Northgate Works,United Kingdom,310,72.7,3,,3,Full,data_sensitivity (12); regulated_data (12); headcount (8),45,93,Example note: customer contracts require annual penetration testing. Confirm with commercial team.
+Rhenmark Plant,Germany,180,63.6,2,,2,Enhanced,regulated_data (12); data_sensitivity (6); headcount (6),45,25,Not completed. Ask local counsel which obligations apply to employee and customer data.
+Calder Design Studio,United Kingdom,28,40.9,2,,2,Enhanced,data_sensitivity (12); it_maturity (4); headcount (2),45,25,Holds unreleased product designs. Local advice not yet requested.
+Silvermere Assembly,Poland,95,36.4,2,,2,Enhanced,data_sensitivity (6); headcount (4); it_maturity (4),45,25,Not completed.
+Tidewater Sales Office,Malaysia,12,31.8,1,,1,Baseline,it_maturity (8); connectivity (4); headcount (2),39,0,

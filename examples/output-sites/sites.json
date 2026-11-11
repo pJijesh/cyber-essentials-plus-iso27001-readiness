@@ -1,0 +1,198 @@
+{
+  "disclaimer": "Example model for internal prioritisation. It is not legal advice and does not state what any law requires. Factors, weights, thresholds and control sets are examples to adjust to your own risk appetite.",
+  "thresholds": [
+    35.0,
+    65.0
+  ],
+  "weights": {
+    "headcount": 2,
+    "data_sensitivity": 3,
+    "regulated_data": 3,
+    "it_maturity": 2,
+    "connectivity": 1
+  },
+  "tiers": [
+    {
+      "tier": 1,
+      "name": "Baseline",
+      "description": "Small or low-exposure site. Meets the five Cyber Essentials technical themes plus an asset and cloud service register.",
+      "assurance": "Annual self-attestation by the site lead, spot checked by group IT.",
+      "review_cycle": "Annual",
+      "ce_items": 39,
+      "iso_controls": 0,
+      "sites": 1
+    },
+    {
+      "tier": 2,
+      "name": "Enhanced",
+      "description": "Adds the scope and third-party items and a core set of ISO management controls: policy, roles, access lifecycle, supplier and cloud oversight, training, incident reporting, backup and logging.",
+      "assurance": "Annual review by group security with sampled evidence, plus a remote technical check.",
+      "review_cycle": "Twice a year",
+      "ce_items": 45,
+      "iso_controls": 25,
+      "sites": 3
+    },
+    {
+      "tier": 3,
+      "name": "Full",
+      "description": "Site inside the ISO/IEC 27001 scope. Every Annex A control is considered and the Statement of Applicability records the decision for each.",
+      "assurance": "Internal audit in the ISMS audit programme, management review input, and independent technical testing.",
+      "review_cycle": "Quarterly",
+      "ce_items": 45,
+      "iso_controls": 93,
+      "sites": 2
+    }
+  ],
+  "sites": [
+    {
+      "site": "Ashgrove Plant",
+      "country": "Mexico",
+      "headcount": 140,
+      "score": 72.7,
+      "score_tier": 3,
+      "floors_applied": [],
+      "tier": 3,
+      "tier_name": "Full",
+      "drivers": [
+        "regulated_data (12)",
+        "it_maturity (8)",
+        "data_sensitivity (6)"
+      ],
+      "factor_points": {
+        "headcount": 2,
+        "data_sensitivity": 2,
+        "regulated_data": 4,
+        "it_maturity": 4,
+        "connectivity": 2
+      },
+      "ce_items_required": 45,
+      "iso_controls_required": 93,
+      "local_requirements_note": "Not completed. Ask local counsel which obligations apply."
+    },
+    {
+      "site": "Northgate Works",
+      "country": "United Kingdom",
+      "headcount": 310,
+      "score": 72.7,
+      "score_tier": 3,
+      "floors_applied": [],
+      "tier": 3,
+      "tier_name": "Full",
+      "drivers": [
+        "data_sensitivity (12)",
+        "regulated_data (12)",
+        "headcount (8)"
+      ],
+      "factor_points": {
+        "headcount": 4,
+        "data_sensitivity": 4,
+        "regulated_data": 4,
+        "it_maturity": 0,
+        "connectivity": 0
+      },
+      "ce_items_required": 45,
+      "iso_controls_required": 93,
+      "local_requirements_note": "Example note: customer contracts require annual penetration testing. Confirm with commercial team."
+    },
+    {
+      "site": "Rhenmark Plant",
+      "country": "Germany",
+      "headcount": 180,
+      "score": 63.6,
+      "score_tier": 2,
+      "floors_applied": [],
+      "tier": 2,
+      "tier_name": "Enhanced",
+      "drivers": [
+        "regulated_data (12)",
+        "data_sensitivity (6)",
+        "headcount (6)"
+      ],
+      "factor_points": {
+        "headcount": 3,
+        "data_sensitivity": 2,
+        "regulated_data": 4,
+        "it_maturity": 2,
+        "connectivity": 0
+      },
+      "ce_items_required": 45,
+      "iso_controls_required": 25,
+      "local_requirements_note": "Not completed. Ask local counsel which obligations apply to employee and customer data."
+    },
+    {
+      "site": "Calder Design Studio",
+      "country": "United Kingdom",
+      "headcount": 28,
+      "score": 40.9,
+      "score_tier": 2,
+      "floors_applied": [],
+      "tier": 2,
+      "tier_name": "Enhanced",
+      "drivers": [
+        "data_sensitivity (12)",
+        "it_maturity (4)",
+        "headcount (2)"
+      ],
+      "factor_points": {
+        "headcount": 1,
+        "data_sensitivity": 4,
+        "regulated_data": 0,
+        "it_maturity": 2,
+        "connectivity": 0
+      },
+      "ce_items_required": 45,
+      "iso_controls_required": 25,
+      "local_requirements_note": "Holds unreleased product designs. Local advice not yet requested."
+    },
+    {
+      "site": "Silvermere Assembly",
+      "country": "Poland",
+      "headcount": 95,
+      "score": 36.4,
+      "score_tier": 2,
+      "floors_applied": [],
+      "tier": 2,
+      "tier_name": "Enhanced",
+      "drivers": [
+        "data_sensitivity (6)",
+        "headcount (4)",
+        "it_maturity (4)"
+      ],
+      "factor_points": {
+        "headcount": 2,
+        "data_sensitivity": 2,
+        "regulated_data": 0,
+        "it_maturity": 2,
+        "connectivity": 2
+      },
+      "ce_items_required": 45,
+      "iso_controls_required": 25,
+      "local_requirements_note": "Not completed."
+    },
+    {
+      "site": "Tidewater Sales Office",
+      "country": "Malaysia",
+      "headcount": 12,
+      "score": 31.8,
+      "score_tier": 1,
+      "floors_applied": [],
+      "tier": 1,
+      "tier_name": "Baseline",
+      "drivers": [
+        "it_maturity (8)",
+        "connectivity (4)",
+        "headcount (2)"
+      ],
+      "factor_points": {
+        "headcount": 1,
+        "data_sensitivity": 0,
+        "regulated_data": 0,
+        "it_maturity": 4,
+        "connectivity": 4
+      },
+      "ce_items_required": 39,
+      "iso_controls_required": 0,
+      "local_requirements_note": ""
+    }
+  ]
+}

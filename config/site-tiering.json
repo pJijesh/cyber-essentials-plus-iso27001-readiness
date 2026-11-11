@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "disclaimer": "Example model for internal prioritisation. It is not legal advice and does not state what any law requires. Factors, weights, thresholds and control sets are examples to adjust to your own risk appetite.",
+  "factors": {
+    "headcount": {
+      "weight": 2,
+      "description": "More people means more accounts, devices and chances of error.",
+      "bands": [
+        {"max": 10, "points": 0},
+        {"max": 50, "points": 1},
+        {"max": 150, "points": 2},
+        {"max": 300, "points": 3},
+        {"max": null, "points": 4}
+      ]
+    },
+    "data_sensitivity": {
+      "weight": 3,
+      "description": "How damaging it would be if data handled at the site were exposed or lost.",
+      "points": {"low": 0, "medium": 2, "high": 4}
+    },
+    "regulated_data": {
+      "weight": 3,
+      "description": "Whether the site handles data covered by a legal, regulatory or contractual obligation. The model records the answer only. It does not say which obligations apply.",
+      "points": {"no": 0, "unknown": 2, "yes": 4}
+    },
+    "it_maturity": {
+      "weight": 2,
+      "description": "How well local IT is managed today. Lower maturity raises residual risk.",
+      "points": {"high": 0, "medium": 2, "low": 4}
+    },
+    "connectivity": {
+      "weight": 1,
+      "description": "Quality of connectivity. Poor connectivity makes patching, monitoring and central management harder.",
+      "points": {"good": 0, "adequate": 2, "poor": 4}
+    }
+  },
+  "thresholds": [35, 65],
+  "floors": [
+    {
+      "name": "regulated data",
+      "when": {"regulated_data": ["yes"]},
+      "min_tier": 2,
+      "reason": "A site that handles regulated data is never placed in the lowest tier."
+    },
+    {
+      "name": "high sensitivity data",
+      "when": {"data_sensitivity": ["high"]},
+      "min_tier": 2,
+      "reason": "A site that handles highly sensitive data is never placed in the lowest tier."
+    },
+    {
+      "name": "regulated and highly sensitive data",
+      "when": {"regulated_data": ["yes"], "data_sensitivity": ["high"]},
+      "min_tier": 3,
+      "reason": "Regulated and highly sensitive data together call for the highest tier."
+    }
+  ],
+  "tiers": {
+    "1": {
+      "name": "Baseline",
+      "description": "Small or low-exposure site. Meets the five Cyber Essentials technical themes plus an asset and cloud service register.",
+      "assurance": "Annual self-attestation by the site lead, spot checked by group IT.",
+      "review_cycle": "Annual",
+      "add_themes": ["Firewalls", "Secure configuration", "Security update management", "User access control", "Malware protection"],
+      "add_ids": ["CE-SCO-03", "CE-SCO-04"],
+      "add_all_iso": false
+    },
+    "2": {
+      "name": "Enhanced",
+      "description": "Adds the scope and third-party items and a core set of ISO management controls: policy, roles, access lifecycle, supplier and cloud oversight, training, incident reporting, backup and logging.",
+      "assurance": "Annual review by group security with sampled evidence, plus a remote technical check.",
+      "review_cycle": "Twice a year",
+      "add_themes": ["Scope and inventory"],
+      "add_ids": ["A.5.1", "A.5.2", "A.5.9", "A.5.15", "A.5.16", "A.5.17", "A.5.18", "A.5.19", "A.5.23", "A.5.24", "A.5.26", "A.5.29", "A.6.3", "A.6.5", "A.6.7", "A.6.8", "A.7.14", "A.8.1", "A.8.2", "A.8.5", "A.8.7", "A.8.8", "A.8.9", "A.8.13", "A.8.15"],
+      "add_all_iso": false
+    },
+    "3": {
+      "name": "Full",
+      "description": "Site inside the ISO/IEC 27001 scope. Every Annex A control is considered and the Statement of Applicability records the decision for each.",
+      "assurance": "Internal audit in the ISMS audit programme, management review input, and independent technical testing.",
+      "review_cycle": "Quarterly",
+      "add_themes": [],
+      "add_ids": [],
+      "add_all_iso": true
+    }
+  }
+}
