@@ -6,15 +6,12 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-12
+
 ### Added
 
+- First public release: Cyber Essentials checklist mapped to all 93 ISO/IEC 27001 Annex A controls, with a Python tool that tracks evidence, scores gaps and drafts a Statement of Applicability.
+- See the README for scope, what has and has not been verified, and the roadmap.
 - Community health files: security policy, code of conduct, issue forms and a pull request template.
 - Citation metadata (`CITATION.cff`) so the repository can be cited from GitHub.
 - Dependabot configuration for GitHub Actions.
-
-## [1.0.0] - 2026-11-11
-
-### Added
-
-- First public release: cyber Essentials checklist mapped to all 93 ISO/IEC 27001 Annex A controls, with a Python tool that tracks evidence, scores gaps and drafts a Statement of Applicability.
-- See the README for scope, what has and has not been verified, and the roadmap.
